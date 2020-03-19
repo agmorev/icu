@@ -1,0 +1,82 @@
+<!-- templates/flatpages/home.html -->
+
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block title %}{{ flatpage.title }}{% endblock title %}
+
+{% block content %}
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-2">
+        <h1 class="display-2">{% trans "A Warm Welcome!" %}</h1>
+        <h3 class="lead">{% trans "We are really glad to welcome you on our first customs web-portal" %} <b>iCustoms<sup><small>info</small></sup></b>. 
+        {% trans "Our mission to provide everyone with eficient and convenient service of customs declaration procedure. We'll realize our main goal in several steps. And the first one is to make free service for customs declaration of goods moved (sent) by citizens across the customs border of Ukraine. Do not hesitate to take part in financing the development of our common project" %}.</h3>
+        <a href="#" class="btn btn-primary btn-lg">{% trans "Finance!" %}</a>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 bg-primary">
+                {% comment %} <img class="card-img-top" src="{% static 'dist/img/dashboard.png' %}" alt="Dashboard Image"> {% endcomment %}
+                <div class="card-body">
+                    <h4 class="card-title"><b>{% trans "Dashboard" %}</b></h4>
+                    <p class="card-text">{% trans "Convenient and informative dashboard. Visitors and customers will get all necessary information on customs border capacity, top news, top posts in forum and latest comments" %}...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">{% trans "Find Out More!" %}</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 bg-yellow">
+                {% comment %} <img class="card-img-top" src="{% static 'dist/img/forum.png' %}" alt="Forum Image"> {% endcomment %}
+                <div class="card-body">
+                    <h4 class="card-title"><b>{% trans "Forum" %}</b></h4>
+                    <p class="card-text">{% trans "Very simple and understandable forum where you can discuss problems and share your experiences in customs area. Visitors can post publications and comments without registration" %}...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">{% trans "Find Out More!" %}</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 bg-green">
+                {% comment %} <img class="card-img-top" src="{% static 'dist/img/news.png' %}" alt="News Image"> {% endcomment %}
+                <div class="card-body">
+                    <h4 class="card-title"><b>{% trans "News" %}</b></h4>
+                    <p class="card-text">{% trans "Latest news from all over Ukraine concerning customs offices, procedures of customs control and customs clearance, customs offenses and liability for such offenses" %}...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">{% trans "Find Out More!" %}</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+            <div class="card h-100 bg-red">
+                {% comment %} <img class="card-img-top" src="{% static 'dist/img/cabinet.png' %}" alt="Cabinet Image"> {% endcomment %}
+                <div class="card-body">
+                    <h4 class="card-title"><b>{% trans "Cabinet" %}</b></h4>
+                    <p class="card-text">{% trans "Cabinet where only authorized (registered) customers can declare their goods for customs control and customs clearance. It is fully free for use and has responsive and convenient interface" %}...</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#" class="btn btn-primary">{% trans "Find Out More!" %}</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+    </div>
+    <!-- /.row -->
+
+{% endblock %}
