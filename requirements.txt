@@ -1,0 +1,9 @@
+autopep8
+Django
+django-allauth
+django-widget-tweaks
+django_countries
+django-debug-toolbar
+pep8
+Pillow
+pycodestyle
